@@ -43,16 +43,21 @@ the same shell.
 
 ## Coding-agent instructions
 
-`AGENTS.md` and the files in `agents/` are not tied to one coding agent. Keep their
-relative paths unchanged because `AGENTS.md` imports the writing-style files.
+The files in `agents/` are not tied to one coding agent. Keep them together because
+`AGENTS.md` imports the writing-style files by relative path.
 
 For GitHub Copilot CLI, symlink them into its user instruction directory:
 
 ```sh
 mkdir -p "$HOME/.copilot"
-ln -s "$HOME/configs/AGENTS.md" \
+ln -s "$HOME/configs/agents/AGENTS.md" \
   "$HOME/.copilot/copilot-instructions.md"
-ln -s "$HOME/configs/agents" "$HOME/.copilot/agents"
+ln -s "$HOME/configs/agents/writing-style.md" \
+  "$HOME/.copilot/writing-style.md"
+ln -s "$HOME/configs/agents/writing-style-technical.md" \
+  "$HOME/.copilot/writing-style-technical.md"
+ln -s "$HOME/configs/agents/writing-style-conversation.md" \
+  "$HOME/.copilot/writing-style-conversation.md"
 ```
 
 Copilot also recognizes `AGENTS.md` in a repository root. Run `/init` in Copilot CLI to

@@ -8,6 +8,6 @@ source links), and the third covers how you talk to me here. Before finalizing a
 re-read it against these rules. In particular: no em dashes, no figurative words, no
 filler qualifiers.
 
-@agents/writing-style.md
-@agents/writing-style-technical.md
-@agents/writing-style-conversation.md
+@writing-style.md
+@writing-style-technical.md
+@writing-style-conversation.md

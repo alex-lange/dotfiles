@@ -12,13 +12,12 @@ outside this repository.
 
 ## Agent instructions
 
-The root `AGENTS.md` contains tool-neutral instructions and imports the writing rules
-from `agents/`.
+`agents/AGENTS.md` contains tool-neutral instructions and imports the writing rules in
+the same directory.
 
 GitHub Copilot CLI can load them as user-level instructions from
-`~/.copilot/copilot-instructions.md`. It also recognizes `AGENTS.md` in a repository
-root. Other coding agents can use the same files through their supported instruction
-filename or directory.
+`~/.copilot/copilot-instructions.md`. Other coding agents can use the same files through
+their supported instruction filename or directory.
 
 ## Layout
 
@@ -28,7 +27,7 @@ filename or directory.
 | `gitconfig` | Git aliases and defaults |
 | `.emacs` | Emacs |
 | `RectangleConfig.json` | Rectangle window manager |
-| `AGENTS.md`, `agents/` | Shared coding-agent instructions |
+| `agents/` | Shared coding-agent instructions |
 | `editors/` | VS Code, Cursor, and Windsurf user settings |
 | `apps/` | Exported settings for iTerm2, Rectangle, Bumpr, and Obsidian |
 | `SETUP.md` | New-machine setup |
