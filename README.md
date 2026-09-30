@@ -1,4 +1,4 @@
-# configs
+# dotfiles
 
 Public dotfiles and macOS app settings.
 
@@ -10,6 +10,16 @@ symlinked into the home directory.
 Private and machine-specific shell settings belong in `~/.zshrc.local`. That file stays
 outside this repository.
 
+## Agent instructions
+
+The root `AGENTS.md` contains tool-neutral instructions and imports the writing rules
+from `agents/`.
+
+GitHub Copilot CLI can load them as user-level instructions from
+`~/.copilot/copilot-instructions.md`. It also recognizes `AGENTS.md` in a repository
+root. Other coding agents can use the same files through their supported instruction
+filename or directory.
+
 ## Layout
 
 | Path | What |
@@ -18,7 +28,7 @@ outside this repository.
 | `gitconfig` | Git aliases and defaults |
 | `.emacs` | Emacs |
 | `RectangleConfig.json` | Rectangle window manager |
-| `claude/` | Claude Code instructions, settings, and hook |
+| `AGENTS.md`, `agents/` | Shared coding-agent instructions |
 | `editors/` | VS Code, Cursor, and Windsurf user settings |
 | `apps/` | Exported settings for iTerm2, Rectangle, Bumpr, and Obsidian |
 | `SETUP.md` | New-machine setup |

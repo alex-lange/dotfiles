@@ -39,9 +39,25 @@ the same shell.
 - Import `RectangleConfig.json` from Rectangle.
 - Import `apps/com.googlecode.iterm2.plist` from iTerm2.
 - Copy the files in `editors/` into the matching editor's user settings.
-- Copy the files in `claude/` to `~/.claude/`. Keep the writing-style files next to
-  `CLAUDE.md`, and keep the hook at `~/.claude/hooks/block-sed-n.py`.
 - Restore Obsidian settings from `apps/` after the vault has synced.
+
+## Coding-agent instructions
+
+`AGENTS.md` and the files in `agents/` are not tied to one coding agent. Keep their
+relative paths unchanged because `AGENTS.md` imports the writing-style files.
+
+For GitHub Copilot CLI, symlink them into its user instruction directory:
+
+```sh
+mkdir -p "$HOME/.copilot"
+ln -s "$HOME/configs/AGENTS.md" \
+  "$HOME/.copilot/copilot-instructions.md"
+ln -s "$HOME/configs/agents" "$HOME/.copilot/agents"
+```
+
+Copilot also recognizes `AGENTS.md` in a repository root. Run `/init` in Copilot CLI to
+create repository-specific instructions when a project needs more than the shared
+writing rules.
 
 ## macOS settings
 
