@@ -1,0 +1,27 @@
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000000
+SAVEHIST=10000000
+
+setopt prompt_subst
+
+autoload -Uz compinit
+compinit
+
+function git_prompt_info {
+  local branch
+  branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null) || return
+  print -r -- " %F{cyan}(${branch})%f"
+}
+
+export PS1='[ %F{green}%~%f$(git_prompt_info) ]'$'\n$ '
+
+alias ls='ls -GFhl'
+alias lock='pmset displaysleepnow'
+alias gsn='git show --name-only'
+
+typeset -U path PATH
+for directory in "$HOME/go/bin" "/Applications/love.app/Contents/MacOS"; do
+  [[ -d "$directory" ]] && path=("$directory" $path)
+done
+
+export ICLOUD_DIR="${HOME}/Library/Mobile Documents/com~apple~CloudDocs"

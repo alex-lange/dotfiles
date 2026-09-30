@@ -1,0 +1,30 @@
+# Git
+alias ch='git diff --ignore-space-at-eol | $EDITOR'
+alias chc='git diff --cached --ignore-space-at-eol | $EDITOR'
+alias current_branch='git branch --show-current'
+alias gaa="git add --all && git status"
+alias gadd="git add --all && git status"
+alias gap="git add --patch"
+alias gb='git branch -v'
+alias gbr="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
+alias gca='git commit -v --all'
+alias gcam='git commit --amend'
+alias gcb='git checkout -b'
+alias gcf="git checkout -f"
+alias gch="git log ORIG_HEAD.. --stat --no-merges"
+alias gci='git commit -v'
+alias gcia='git commit -v --all'
+alias gclean="git clean -dff && git submodule foreach git clean -dff"
+alias gcp="git checkout --patch"
+alias gcv='git commit -v'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gdh='git diff HEAD'
+alias git-user='$EDITOR ~/.gitconfig'
+alias gl="git log --date=local"
+alias gps="git pull && git submodule sync && git submodule update --init --recursive"
+alias grc="git rebase --continue"
+alias grm="git status | grep 'deleted:' | sed -e 's/^.*deleted: *//' -e 's/^/\"/g' -e 's/$/\"/g' | xargs -n1 git rm"
+alias gs='git status'
+alias gss='git status --short --branch'
+alias gu='$EDITOR ~/.gitconfig'

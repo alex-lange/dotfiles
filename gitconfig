@@ -1,0 +1,4 @@
+[alias]
+	pf = push --force-with-lease
+[push]
+	autoSetupRemote = true
