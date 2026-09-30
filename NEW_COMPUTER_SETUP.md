@@ -86,6 +86,8 @@ ln -s "$HOME/dotfiles/agents/writing-style-technical.md" \
   "$HOME/.copilot/writing-style-technical.md"
 ln -s "$HOME/dotfiles/agents/writing-style-conversation.md" \
   "$HOME/.copilot/writing-style-conversation.md"
+ln -s "$HOME/dotfiles/agents/engineering-workflow.md" \
+  "$HOME/.copilot/engineering-workflow.md"
 ```
 
 Copilot also recognizes `AGENTS.md` in a repository root. Run `/init` in Copilot CLI to

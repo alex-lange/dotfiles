@@ -11,6 +11,9 @@ Engineering-specific rules (code comments, design doc structure, source links) a
 - **Write to the reader as a peer.** Use "we" and "us" when writing for a group you're part of. Don't switch into an announcement voice.
 - **Soften proposals, not facts.** Use "would", "could", "might" for things we haven't done yet. Use declarative voice for things that exist today.
 - **Don't editorialize.** Describe what something does and let the reader judge. Avoid "This is actually the desired behavior" or "That's exactly where this is headed."
+- **Avoid ableist language.** Don't use "crazy", "sane", "insane", "sanity", or "insanity" as shorthand for technical behavior.
+- **Avoid business jargon.** Prefer "match" over "align", "use" over "leverage", "request" over "ask" as a noun, and "investigate" over "deep dive".
+- **Avoid marketing language.** Don't describe work as "seamless", "simple", "powerful", or "robust". State the behavior, options, and evidence.
 
 ## Brevity
 - **Cut trailing restaters.** If a sentence already makes the point, don't add a clause restating it.
