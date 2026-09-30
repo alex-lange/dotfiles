@@ -4,8 +4,8 @@ Public dotfiles and macOS app settings.
 
 ## Setup
 
-See [`SETUP.md`](SETUP.md) for the new-machine steps. The shell files are intended to be
-symlinked into the home directory.
+See [`NEW_COMPUTER_SETUP.md`](NEW_COMPUTER_SETUP.md) for the new-computer checklist. The
+shell files are intended to be symlinked into the home directory.
 
 Private and machine-specific shell settings belong in `~/.zshrc.local`. That file stays
 outside this repository.
@@ -23,12 +23,10 @@ their supported instruction filename or directory.
 
 | Path | What |
 |---|---|
-| `zshrc`, `zsh_profile`, `zshenv`, `profile`, `aliases` | Shell configuration |
+| `zshrc`, `zsh_profile`, `zshenv`, `aliases` | Shell configuration |
 | `gitconfig` | Git aliases and defaults |
-| `.emacs` | Emacs |
 | `RectangleConfig.json` | Rectangle window manager |
 | `agents/` | Shared coding-agent instructions |
-| `editors/` | VS Code, Cursor, and Windsurf user settings |
+| `editors/` | VS Code user settings |
 | `apps/` | Exported Obsidian settings |
-| `SETUP.md` | New-machine setup |
-| `SOURCES.md` | Public repos to re-clone rather than copy |
+| `NEW_COMPUTER_SETUP.md` | New-computer setup checklist |
