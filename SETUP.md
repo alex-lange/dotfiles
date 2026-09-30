@@ -37,7 +37,6 @@ the same shell.
 ## App settings
 
 - Import `RectangleConfig.json` from Rectangle.
-- Import `apps/com.googlecode.iterm2.plist` from iTerm2.
 - Copy the files in `editors/` into the matching editor's user settings.
 - Restore Obsidian settings from `apps/` after the vault has synced.
 

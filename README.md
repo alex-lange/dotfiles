@@ -29,6 +29,6 @@ their supported instruction filename or directory.
 | `RectangleConfig.json` | Rectangle window manager |
 | `agents/` | Shared coding-agent instructions |
 | `editors/` | VS Code, Cursor, and Windsurf user settings |
-| `apps/` | Exported settings for iTerm2, Rectangle, Bumpr, and Obsidian |
+| `apps/` | Exported Obsidian settings |
 | `SETUP.md` | New-machine setup |
 | `SOURCES.md` | Public repos to re-clone rather than copy |
