@@ -17,6 +17,10 @@ Worked examples of the general plain-words rule:
 - "the database call takes the most time" not "the database call is the request".
 
 ## Uncertainty
+- **Don't pair a hedge with an absolute claim.** If you're unsure, let the whole sentence say so.
+  - No: `As far as I can tell, we can't preserve this behavior without changing access control.`
+  - Yes: `I'm not sure we can preserve this behavior without changing access control.`
+- **Say what you haven't checked.** `We haven't tested that approach yet, so it might not work.`
 - **Hedge your confidence out loud.** "as far as I can tell", "it seems like", "I think", "probably", "not clear if we'll need to". Mark judgment as judgment instead of flattening everything to one confident tone. Facts about what exists today still get declarative voice.
 - **Vague placeholders beat invented precision.** "some kind of deduplication", "TBD", "or something" are fine when the detail isn't settled. Don't manufacture a specific number, name, or mechanism to fill a gap.
 
@@ -31,6 +35,30 @@ Worked examples of the general plain-words rule:
     - **Bold title.** Description sentence.
   ```
   Not: `- **Pro**: description` / `- **Con**: description`
+
+- **In review replies and messages, use the same short fields for every option instead of Pros/Cons.** Pick the fields the reader needs to decide, such as what changes, who's affected, and the remaining issue. Use the same fields in the same order for every option. Omit a field rather than pad it.
+  ```markdown
+  ### 3. Change the permission check (this version)
+
+  - **Access rules:** expands who can pass the check.
+  - **Who gets the error:** callers who lack the required permission.
+  ```
+- **When options are earlier versions of the same work, label them.** Use `(first version)`, `(second version)`, or `(this version)` so the reader can match each option to what they've reviewed.
+- **Show the concrete result of an issue inline.** `A caller could distinguish an existing resource they can't read (403) from a missing one (404).`
+
+## Replying to review comments
+
+- **Acknowledge the reviewer's specific point.** Name the point rather than giving generic praise.
+  - No: `Thanks, that's a good point.`
+  - Yes: `Thanks! Good point that ownership doesn't necessarily imply access.`
+- **Don't state what the reviewer thinks or wants.** If you're inferring their concern, ask them to confirm it.
+  - No: `This expands access, which is the concern you raised.`
+  - Yes: `This expands access. Is that your concern?`
+- **Own earlier decisions plainly, including ones that look wrong now.** Explain why you made the choice, then say what you think of it now. Don't defend it.
+- **Refer to things by names the reviewer knows.** Use the PR, method, or endpoint instead of labels invented while working.
+- **Credit where options or findings came from.** `These are the options I (and Copilot) have looked at.`
+- **Say when a list isn't complete.** `There are probably more options.`
+- **End with the questions you need answered, as a list.** Don't end with your own preference unless the reviewer asked for one. The conversation guide's recommendation rule applies to replies to the user, not replies to colleagues.
 
 ## Code comments
 

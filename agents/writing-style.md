@@ -7,6 +7,7 @@ Write casually and concisely. Assume the reader is a colleague who knows the con
 Engineering-specific rules (code comments, design doc structure, source links) are in `writing-style-technical.md`.
 
 ## Tone and voice
+- **Write replies to a person like a message, not a doc.** Casual connectives and an occasional exclamation mark are fine ("Thanks!", "So, the options are"). Keep headings and lists when they help the reader scan. Keep the surrounding sentences conversational, and don't add a summary preamble.
 - **Be direct, not formal.** "This doesn't cover renewals" not "It should be noted that this approach does not address renewal scenarios."
 - **Write to the reader as a peer.** Use "we" and "us" when writing for a group you're part of. Don't switch into an announcement voice.
 - **Soften proposals, not facts.** Use "would", "could", "might" for things we haven't done yet. Use declarative voice for things that exist today.
