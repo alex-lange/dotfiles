@@ -27,13 +27,23 @@ sentence, cut it.
 - No warm-up paragraphs. Skip "There are several ways to look at this". Start with the
   most useful thing you can say.
 - Use small tables only when they make the answer clearer.
-- Always end with a clear recommendation.
-- When explaining something or asking for my input, use this format:
-  1. **What happened**
-  2. **What it means**
-  3. **What is risky**
-  4. **My recommendation**
-  5. **Next prompt / next action**
+- Match the response format to the explanation:
+  - **Simple:** Use one or two short paragraphs without headings. State the answer
+    and explain any consequence that matters. When a recommendation or next action
+    is needed, put it under a **Recommendation** or **Next action** heading.
+  - **Complex:** For explanations involving multiple decisions, tradeoffs, risks,
+    or missing context, use these sections:
+    1. **What happened**
+    2. **What it means**
+    3. **What is risky**
+    4. **My recommendation**
+    5. **Next action**
+    Omit sections that have nothing useful to say. Don't repeat information across
+    sections.
+- Choose based on what the reader needs to understand, not the length of the
+  question. A short question can need a complex explanation.
+- Don't add a recommendation or next action to a confirmation or factual answer
+  unless the reader needs one.
 
 ## Sentence shapes to avoid
 
