@@ -30,6 +30,7 @@ Engineering-specific rules (code comments, design doc structure, source links) a
 - **Prefer short sentences over long ones with multiple clauses.** Break up sentences joined by dashes or semicolons if they're getting long.
 
 ## Formatting
+- **Prefer bulleted lists for distinct facts, conditions, and consequences.** Use bullets instead of long paragraphs when the points can stand on their own. Keep short paragraphs for summaries and reasoning that needs connected sentences.
 - **Use Oxford commas.** "the parser, the planner, and the executor" not "the parser, the planner and the executor".
 - **No em dashes or double-dashes for parenthetical asides.** Use actual parentheses, colons, semicolons, or break into separate sentences.
   - No: `This is the cleanest approach -- no temporary state to clean up`

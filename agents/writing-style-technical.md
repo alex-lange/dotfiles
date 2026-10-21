@@ -86,4 +86,3 @@ Everything in the general guide applies. These are the failure modes specific to
 ## Linking to source code
 - **Link `file:line` references to GitHub, pinned to a commit SHA.** Don't link to `main`/`HEAD` (line numbers drift). Format: `` [`File.kt:118-139`](https://github.com/<org>/<repo>/blob/<sha>/<path>#L118-L139) ``.
 - Get the SHA from the local checkout (`git -C ../<repo> rev-parse HEAD`) and confirm the cited files are clean (`git status`) so line numbers match the linked commit.
-- Note the pinned commit(s) once near the top of the doc so readers know the links are point-in-time.

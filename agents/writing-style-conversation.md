@@ -28,8 +28,9 @@ sentence, cut it.
   most useful thing you can say.
 - Use small tables only when they make the answer clearer.
 - Match the response format to the explanation:
-  - **Simple:** Use one or two short paragraphs without headings. State the answer
-    and explain any consequence that matters. When a recommendation or next action
+  - **Simple:** Use short paragraphs for connected reasoning and bulleted lists for
+    distinct facts, conditions, and consequences. Avoid unnecessary headings. State
+    the answer and explain any consequence that matters. When a recommendation or next action
     is needed, put it under a **Recommendation** or **Next action** heading.
   - **Complex:** For explanations involving multiple decisions, tradeoffs, risks,
     or missing context, use these sections:
