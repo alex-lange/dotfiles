@@ -8,6 +8,12 @@ Engineering document structure, evidence, code comments, and source links are in
 `writing-style-technical.md`. Chat-specific guidance is in
 `writing-style-conversation.md`.
 
+## Agent-facing instructions
+
+- **Optimize for precise execution.** Prompts, skills, and agent instruction files should use explicit requirements, scope, technical identifiers, structured sections, and completion criteria. Human-facing tone and document-structure defaults do not apply to these instructions. Keep the shared rules for clarity, necessary context, and removing filler and repetition.
+- **Separate instructions from their output.** When an agent will produce human-facing content, specify that content's audience, purpose, and applicable writing guidance separately. The prompt's execution sections do not prescribe the resulting document's headings.
+- **Use agent-writing guidance when available.** When creating or editing prompts, skills, or agent instruction files, invoke `mattpocock-skills:writing-for-agents` if available, or its installed equivalent such as `writing-for-agents`. Use the name exposed by the current tool. If unavailable, continue with this section's guidance.
+
 ## Audience and context
 - **Separate expertise from familiarity.** Treat engineering readers as technically capable colleagues. Determine their familiarity with the project, code, and incidents from the task and conversation.
 - **Introduce what the explanation depends on.** Establish unfamiliar project-specific facts before using them to explain a finding or proposal. Explain general engineering concepts only when requested or necessary for the stated audience.
