@@ -1,8 +1,8 @@
 # Writing style
 
 Apply the shared prose rules to all writing, including chat replies, documents,
-commit messages, and code comments. Before finalizing prose, check it against the
-applicable guides.
+commit messages, and code comments, respecting the agent-facing scope defined
+in the shared guide. Before finalizing prose, check it against the applicable guides.
 
 @writing-style.md
 
