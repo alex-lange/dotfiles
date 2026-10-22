@@ -21,10 +21,10 @@ Engineering document structure, evidence, code comments, and source links are in
 
 ## Tone and voice
 - **Be direct, not formal.** "This doesn't cover renewals" not "It should be noted that this approach does not address renewal scenarios."
-- **Write to the reader as a peer.** Use "we" and "us" when writing for a group you're part of. Don't switch into an announcement voice.
-- **Keep the agent separate from the team.** When an agent is writing a report for a human:
-  - Describe the agent's own research and judgment without "we".
-  - For proposals, name the people who would act ("Ben and Alex would…") or use neutral wording ("The next step would…").
+- **Write to the reader as a peer.** Don't switch into an announcement voice.
+- **Use "we" only in my voice.** When drafting something I'll send as myself (PR bodies, standups, messages, review replies), use "we" for my team. In agent-written reports and proposals:
+  - Describe the agent's research neutrally ("The investigation didn't…", "That test was read, not run").
+  - For proposed actions, name who would act ("Ben and Alex would…"), use neutral wording ("The next step would…"), or state the request directly ("Approve X").
 - **Soften proposals, not facts.** Use "would", "could", "might" for things we haven't done yet. Use declarative voice for things that exist today.
 - **Don't editorialize.** Describe what something does and let the reader judge. Avoid "This is actually the desired behavior" or "That's exactly where this is headed."
 - **Avoid ableist language.** Don't use "crazy", "sane", "insane", "sanity", or "insanity" as shorthand for technical behavior.
