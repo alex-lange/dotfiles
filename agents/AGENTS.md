@@ -1,14 +1,18 @@
 # Writing style
 
-You MUST use the following writing style for everything you write to me, including your
-replies in the conversation: chat replies, commit messages, notes, docs, and code
-comments. A chat reply is writing and gets the same care as a doc. Before finalizing any
-prose, re-read it against these rules. In particular: no em dashes, no figurative words,
-no filler qualifiers.
+Apply the shared prose rules to all writing, including chat replies, documents,
+commit messages, and code comments. Before finalizing prose, check it against the
+applicable guides.
 
 @writing-style.md
+
+For chat replies to the user, also apply the conversation guide. Its answer
+structure does not prescribe the structure of documents written during the task.
+
 @writing-style-conversation.md
 
-When working on software engineering tasks, also follow this file:
+For engineering writing, apply the technical guide. Choose its document-specific
+defaults by purpose: PR, investigation, decision proposal, implementation handoff,
+or status update. It also covers review replies, code comments, and source links.
 
 @writing-style-technical.md

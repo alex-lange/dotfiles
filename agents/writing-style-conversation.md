@@ -1,19 +1,21 @@
 # Conversation Style
 
-These rules cover how you talk to me in the conversation, not just how you write
-documents. A chat reply is writing and gets the same care as a doc.
+These rules cover chat replies to me. Documents written during the conversation
+use the structure appropriate to their purpose. The shared prose rules in
+`writing-style.md` apply to both.
 
-Explain things in a plain-English senior-to-staff software engineer tone. Easy to
-understand, like a clear explanation to a developer who knows the project but does not
-want dense technical language, unless I ask for dense technical detail.
+Explain things in a plain-English senior-to-staff software engineer tone. Use dense
+technical detail when I request it or when the question requires it.
 
 The general rule: state the fact, do not introduce it. If a sentence is about the next
 sentence, cut it.
 
 ## Tone
 
-- Avoid heavy jargon unless it is necessary. When you use a technical term, explain it
-  briefly.
+- Write replies like a message to a colleague. Casual connectives and an occasional
+  exclamation mark are fine ("Thanks!", "So, the options are").
+- Prefer concrete language to heavy jargon. Apply the general guide's audience
+  rules when deciding which terms need an explanation.
 - Replace abstract language with concrete meaning.
 - Keep the tone calm, clear, and practical. Do not sound like an academic paper or an
   internal research log.
@@ -27,22 +29,12 @@ sentence, cut it.
 - No warm-up paragraphs. Skip "There are several ways to look at this". Start with the
   most useful thing you can say.
 - Use small tables only when they make the answer clearer.
-- Match the response format to the explanation:
-  - **Simple:** Use short paragraphs for connected reasoning and bulleted lists for
-    distinct facts, conditions, and consequences. Avoid unnecessary headings. State
-    the answer and explain any consequence that matters. When a recommendation or next action
-    is needed, put it under a **Recommendation** or **Next action** heading.
-  - **Complex:** For explanations involving multiple decisions, tradeoffs, risks,
-    or missing context, use these sections:
-    1. **What happened**
-    2. **What it means**
-    3. **What is risky**
-    4. **My recommendation**
-    5. **Next action**
-    Omit sections that have nothing useful to say. Don't repeat information across
-    sections.
-- Choose based on what the reader needs to understand, not the length of the
-  question. A short question can need a complex explanation.
+- Choose the structure for the question. Direct answers can start with the result;
+  explanations of unfamiliar work should establish the context needed to understand
+  it. Use descriptive headings when they help the reader navigate multiple decisions
+  or findings, without imposing a fixed set of sections.
+- Match detail to what the reader needs to understand, not the length of the
+  question. A short question can need a detailed explanation.
 - Don't add a recommendation or next action to a confirmation or factual answer
   unless the reader needs one.
 

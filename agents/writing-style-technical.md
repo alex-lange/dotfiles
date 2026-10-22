@@ -1,22 +1,38 @@
 # Writing Style: Technical
 
-Rules for engineering writing: code comments, design docs, PR descriptions, architecture notes, incident write-ups.
+Rules for engineering writing: PR descriptions, investigations, decision proposals,
+implementation handoffs, status updates, design docs, review replies, and code comments.
 
 The general rules in `writing-style.md` apply here too. This file adds what's specific to technical writing.
 
-## Terminology
-- **Reserve `--` for SQL comments and CLI flags.** Never as a parenthetical aside.
+## Structure by purpose
 
-## Plain words, applied to engineering prose
-Worked examples of the general plain-words rule:
-- "Get the query plan" not "Grab the query plan".
-- "Where sampling applies" not "where sampling bites".
-- "the schemas are 10-100 MB" not "the schemas run 10-100 MB".
-- "payloads in the response" not "payloads on the wire".
-- "a day of running in prod" not "a day of prod bake".
-- "the database call takes the most time" not "the database call is the request".
+Use the requested format or repository template when provided. Otherwise choose
+the default below. These describe reading order, not mandatory headings or minimum
+lengths. Scale the background to the audience's familiarity and the task.
 
-## Uncertainty
+| Document | Reader's task | Default structure |
+|---|---|---|
+| PR description | Understand and review a change | What changed, why it was needed, and relevant behavior or risks. Include only background needed to review the diff; link broader investigations. A small change may need only a few sentences. |
+| Investigation report | Understand a problem and evaluate findings | Problem and necessary system context, findings and their relationship, proposed action, and uncertainty. Introduce unfamiliar operations and incidents before evaluating them. |
+| Decision proposal | Choose between options | Decision needed, relevant constraints, options and tradeoffs, and recommendation with rationale when requested. |
+| Implementation handoff | Continue work without repeating discovery | Objective, current state, scope, exact changes, validation, and unresolved decisions. |
+| Status update | Understand progress and whether action is needed | Progress, blockers, and next action. Reuse established context rather than repeating the project introduction. |
+
+### Investigation reports
+
+- **Make the main explanation self-contained.** A reader should understand the problem, relevant operation, findings, and proposed action without opening citations. Put exhaustive inventories, queries, and implementation details in supporting sections or files.
+- **Explain relationships between findings.** Distinguish observed incidents, findings from code inspection, and proposed changes. State when a finding has not been shown to cause an incident.
+- **Check the opening from the reader's perspective.** Read it without the source notes. Every system or incident needed to understand the proposal should be introduced before the explanation depends on it. Preserve evidence limits alongside the claims they qualify.
+
+### Design docs
+
+- **Use a diagram or concrete example** when it explains the behavior more clearly than prose. Show the before/after or data flow alongside the relevant explanation.
+- **Reference details already covered.** If scope is established in one section, reference it from the implementation plan rather than restating it.
+- **Mark open questions and TODOs explicitly.** Use `**TODO:**` inline for things that need investigation.
+- **Keep unfinished sections visible in requested drafts.** Mark them `[WIP]` or `[IN PROGRESS]`, with the heading or a short statement of what remains unresolved. Leave unknown details explicit rather than filling them with plausible text.
+
+## Evidence and uncertainty
 - **Don't pair a hedge with an absolute claim.** If you're unsure, let the whole sentence say so.
   - No: `As far as I can tell, we can't preserve this behavior without changing access control.`
   - Yes: `I'm not sure we can preserve this behavior without changing access control.`
@@ -25,8 +41,8 @@ Worked examples of the general plain-words rule:
 - **Vague placeholders beat invented precision.** "some kind of deduplication", "TBD", "or something" are fine when the detail isn't settled. Don't manufacture a specific number, name, or mechanism to fill a gap.
 
 ## Comparing options
-- **Options as headings, not as a recommendation.** Present options neutrally. If there's a lean, put a short note in the comparison section, not a separate "Recommendation" section that argues for one side.
-- **Pros/Cons in grouped format:**
+- **Match the comparison to the request.** For a neutral comparison, present options under their own headings or in a table, with any tentative preference noted briefly. When asked to recommend, identify the preferred option and explain it using the same criteria applied to the alternatives.
+- **When using Pros/Cons, group them:**
   ```
   - **Pros**:
     - **Bold title.** Description sentence.
@@ -58,7 +74,7 @@ Worked examples of the general plain-words rule:
 - **Refer to things by names the reviewer knows.** Use the PR, method, or endpoint instead of labels invented while working.
 - **Credit where options or findings came from.** `These are the options I (and Copilot) have looked at.`
 - **Say when a list isn't complete.** `There are probably more options.`
-- **End with the questions you need answered, as a list.** Don't end with your own preference unless the reviewer asked for one. The conversation guide's recommendation rule applies to replies to the user, not replies to colleagues.
+- **End with the questions you need answered, as a list.** Omit this when no answer is needed. Don't end with your own preference unless the reviewer asked for one.
 
 ## Code comments
 
@@ -76,12 +92,6 @@ Everything in the general guide applies. These are the failure modes specific to
   - No: `# Keep between X and Y` immediately followed by `# Must be less than X`
 - **Comment the surprise, not the obvious.** The best comments explain a non-obvious constraint, a deliberate asymmetry, or a trap for the next reader: why one call is left unrecovered while the one below it isn't, or why a field must never be used for ordering. Those earn their lines. Narrating the happy path does not.
 - **Length should match the file's neighbours.** A paragraph above a two-line function is too long.
-
-## Design doc structure
-- **Lead sections with a diagram or concrete example** when possible. Show the before/after or the data flow first, then explain in text.
-- **Don't repeat the same information in multiple sections.** If something is covered in the scoping section, reference it from the implementation plan instead of restating it.
-- **Mark open questions and TODOs explicitly.** Use `**TODO:**` inline for things that need investigation.
-- **Ship the skeleton. Don't hide unfinished sections.** Mark them `[WIP]` or `[IN PROGRESS]` and leave the heading, the empty table, or the one-line stub in place. A visible hole is more useful than a section that quietly isn't there. Don't fill a gap with plausible text.
 
 ## Linking to source code
 - **Link `file:line` references to GitHub, pinned to a commit SHA.** Don't link to `main`/`HEAD` (line numbers drift). Format: `` [`File.kt:118-139`](https://github.com/<org>/<repo>/blob/<sha>/<path>#L118-L139) ``.

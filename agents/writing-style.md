@@ -2,12 +2,18 @@
 
 Rules for all prose: notes, messages, email, summaries, commit messages, docs.
 
-Write casually and concisely. Assume the reader is a colleague who knows the context and wants the point.
+Write casually and concisely. Include enough context for the reader to do the task.
 
-Engineering-specific rules (code comments, design doc structure, source links) are in `writing-style-technical.md`.
+Engineering document structure, evidence, code comments, and source links are in
+`writing-style-technical.md`. Chat-specific guidance is in
+`writing-style-conversation.md`.
+
+## Audience and context
+- **Separate expertise from familiarity.** Treat engineering readers as technically capable colleagues. Determine their familiarity with the project, code, and incidents from the task and conversation.
+- **Introduce what the explanation depends on.** Establish unfamiliar project-specific facts before using them to explain a finding or proposal. Explain general engineering concepts only when requested or necessary for the stated audience.
+- **Match context to the task.** A familiar change may need one sentence of background; an unfamiliar investigation may need an introduction. Necessary context is part of the explanation.
 
 ## Tone and voice
-- **Write replies to a person like a message, not a doc.** Casual connectives and an occasional exclamation mark are fine ("Thanks!", "So, the options are"). Keep headings and lists when they help the reader scan. Keep the surrounding sentences conversational, and don't add a summary preamble.
 - **Be direct, not formal.** "This doesn't cover renewals" not "It should be noted that this approach does not address renewal scenarios."
 - **Write to the reader as a peer.** Use "we" and "us" when writing for a group you're part of. Don't switch into an announcement voice.
 - **Soften proposals, not facts.** Use "would", "could", "might" for things we haven't done yet. Use declarative voice for things that exist today.
@@ -17,11 +23,12 @@ Engineering-specific rules (code comments, design doc structure, source links) a
 - **Avoid marketing language.** Don't describe work as "seamless", "simple", "powerful", or "robust". State the behavior, options, and evidence.
 
 ## Brevity
+- **Preserve necessary context and reasoning.** Shorten by removing filler and repetition. When revising for missing context, integrate it into the explanation and reread the whole opening rather than appending another explanation.
 - **Cut trailing restaters.** If a sentence already makes the point, don't add a clause restating it.
 - **Cut filler qualifiers.** "It's worth noting that", "In practice this is fine:", "This is a significant change". Just say the thing.
 - **Cut unnecessary specificity.** When exact numbers don't matter, say "when the list gets long" not "200 items across 12 categories".
 - **Cut editorializing parentheticals.** Don't tag a step or section with how important it is. No "(the key step)", "(what nailed it)", "(in order of usefulness)". Let the content carry the weight.
-- **Don't announce summaries.** Drop labels like "Bottom line:", "TL;DR:", "In summary", "The takeaway:". State the conclusion as a plain sentence. If a section needs a label to surface its point, it's too long.
+- **Don't announce summaries.** Drop labels like "Bottom line:", "TL;DR:", "In summary", "The takeaway:". State the conclusion as a plain sentence. Keep descriptive headings when they help navigation or belong to the requested format.
 - **Prefer plain words over figurative or clever ones; clarity over cleverness.** Use the literal term, not a vivid, idiomatic, or jargon stand-in a reader has to translate. This applies to verbs, nouns, and casual phrasing alike:
   - **Verbs.** "Get the numbers" not "Grab the numbers". "Where the limit applies" not "where the limit bites". Avoid grab, nail, crack, bite, kick in, dominates, attacks, and similar.
   - **Nouns and metaphors.** Name the actual thing, not a metaphor for it. "scope of impact" not "blast radius". "the big efforts" not "the big lifts". "the better option" not "the better lever". "the main cost" not "the hot path". "the first set of changes" not "the first bundle".
