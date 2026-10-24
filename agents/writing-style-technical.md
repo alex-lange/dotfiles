@@ -38,7 +38,19 @@ lengths. Scale the background to the audience's familiarity and the task.
   - Yes: `I'm not sure we can preserve this behavior without changing access control.`
 - **Say what you haven't checked.** `We haven't tested that approach yet, so it might not work.`
 - **Hedge your confidence out loud.** "as far as I can tell", "it seems like", "I think", "probably", "not clear if we'll need to". Mark judgment as judgment instead of flattening everything to one confident tone. Facts about what exists today still get declarative voice.
+- **Report missing data as missing.** A failed query, an absent data series, or an unsearched source is a gap, not a zero or a negative result.
+- **Keep each claim's type.** A recommendation says "should", an inference says how it was inferred, and a proposal stays separate from a decision. Current practice gets declarative voice only when it was observed.
 - **Vague placeholders beat invented precision.** "some kind of deduplication", "TBD", "or something" are fine when the detail isn't settled. Don't manufacture a specific number, name, or mechanism to fill a gap.
+
+## Revising documents
+
+These apply when editing an existing document, including fixing review findings.
+
+- **Change wording and structure, not claims.** Keep every number, ID, link, date, qualifier that carries evidence, attribution, and caveat. If a fact moves, confirm it exists in its new place.
+- **Keep the document cohesive.** Put new findings in the sections they belong to, and date the facts rather than the sections. The document describes the subject, not its own edit history or the tools used to research it.
+- **State changing status once.** Give status that will change, such as PR state or the agreed next step, one dated, canonical location. Link to it from other sections and documents.
+- **Keep inbound links working.** Before renaming or removing a heading, find links to it and update them.
+- **Use one name for each thing.** When a system, measurement, or decision has several names across documents, pick one and use it everywhere.
 
 ## Comparing options
 - **Match the comparison to the request.** For a neutral comparison, present options under their own headings or in a table, with any tentative preference noted briefly. When asked to recommend, identify the preferred option and explain it using the same criteria applied to the alternatives.

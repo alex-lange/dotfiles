@@ -35,6 +35,7 @@ Engineering document structure, evidence, code comments, and source links are in
 - **Preserve necessary context and reasoning.** Shorten by removing filler and repetition. When revising for missing context, integrate it into the explanation and reread the whole opening rather than appending another explanation.
 - **Cut trailing restaters.** If a sentence already makes the point, don't add a clause restating it.
 - **Cut filler qualifiers.** "It's worth noting that", "In practice this is fine:", "This is a significant change". Just say the thing.
+  - Keep qualifiers that carry evidence: certainty ("likely", "probably"), scope ("on its own", "automatically"), time ("as of October 22"), and source ("the notes recall", "the PR says"). Removing one changes the claim.
 - **Cut unnecessary specificity.** When exact numbers don't matter, say "when the list gets long" not "200 items across 12 categories".
 - **Cut editorializing parentheticals.** Don't tag a step or section with how important it is. No "(the key step)", "(what nailed it)", "(in order of usefulness)". Let the content carry the weight.
 - **Don't announce summaries.** Drop labels like "Bottom line:", "TL;DR:", "In summary", "The takeaway:". State the conclusion as a plain sentence. Keep descriptive headings when they help navigation or belong to the requested format.
