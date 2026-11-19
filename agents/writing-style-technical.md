@@ -19,6 +19,35 @@ lengths. Scale the background to the audience's familiarity and the task.
 | Implementation handoff | Continue work without repeating discovery | Objective, current state, scope, exact changes, validation, and unresolved decisions. |
 | Status update | Understand progress and whether action is needed | Progress, blockers, and next action. Reuse established context rather than repeating the project introduction. |
 
+### PR descriptions
+
+- **Give context and approach different purposes.** Context explains the relevant
+  current behavior, problem, and consequence. Approach explains what changes and
+  why. Avoid repeating the problem in both sections.
+- **Explain the failure mechanism.** Connect actions to consequences rather than
+  listing implementation details. For example: "The job sets the marker before
+  writing, so a failed write leaves a marker that blocks later attempts."
+- **Prefer a short before-and-after explanation.** Use concise paragraphs for
+  connected reasoning and short bullets for independent behavioral changes.
+  Include a detailed execution sequence only when reviewers need it to
+  understand the change.
+- **Connect the change to observed impact.** Link the incident, investigation, or
+  customer consequence that motivated the work. Distinguish observed failures
+  from expected improvements. Do not promise SLO or paging improvements without
+  evidence.
+- **Put evidence beside the claim.** Link unfamiliar existing behavior to source
+  code, especially when it is outside the PR's diff. Link a named precedent
+  directly to its implementation. Use the source-link rules below.
+- **Use collapsible examples selectively.** Include a small before-and-after
+  diff, diagram, or example when it explains the change more clearly than prose.
+  Put optional supporting excerpts in `<details>`, label omissions, and keep the
+  main explanation understandable without expanding them. These are optional,
+  not required template elements.
+- **Reconcile the description with the final implementation.** After design
+  changes, remove obsolete explanations and update relevant dependency risks,
+  failure behavior, validation, and rollback details. Report validation against
+  the revision and scope actually checked.
+
 ### Investigation reports
 
 - **Make the main explanation self-contained.** A reader should understand the problem, relevant operation, findings, and proposed action without opening citations. Put exhaustive inventories, queries, and implementation details in supporting sections or files.
