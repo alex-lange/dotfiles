@@ -29,10 +29,13 @@ sentence, cut it.
 - No warm-up paragraphs. Skip "There are several ways to look at this". Start with the
   most useful thing you can say.
 - Use small tables only when they make the answer clearer.
+- For substantial replies, use these sections when they fit: **What happened** for the
+  result or finding, **What it means** for context and consequences, and **Next
+  action** for a recommendation, decision, or next step. Rename them when more
+  descriptive headings help. Simple answers can omit headings.
 - Choose the structure for the question. Direct answers can start with the result;
   explanations of unfamiliar work should establish the context needed to understand
-  it. Use descriptive headings when they help the reader navigate multiple decisions
-  or findings, without imposing a fixed set of sections.
+  it.
 - Match detail to what the reader needs to understand, not the length of the
   question. A short question can need a detailed explanation.
 - Don't add a recommendation or next action to a confirmation or factual answer
